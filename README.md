@@ -1,2 +1,2 @@
 # quiz3
-creating a quiz using ES6
+building a quiz using ES6
