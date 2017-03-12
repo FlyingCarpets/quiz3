@@ -1,0 +1,28 @@
+{
+  "name": "quiz-es6",
+  "version": "1.0.0",
+  "description": "quiz-es6",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack --bail -p",
+    "buildDev": "webpack --display-error-details",
+    "watch": "webpack --watch",
+    "assets": "npm install && npm run buildDev",
+    "deploy": "gh-pages-deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlyingCarpets/quiz3.git"
+  },
+  "author": "FlyingCarpets",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.18.0",
+    "classlist-polyfill": "^1.0.3",
+    "gh-pages-deploy": "^0.4.2",
+    "webpack": "^2.2.1"
+  }
+}
