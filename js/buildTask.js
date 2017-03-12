@@ -12,16 +12,16 @@ let buildTask = (() => {
         }
     }
 
-    function publicGetTaskData(data_path) {
+    function getTaskData(data_path) {
         $.getJSON(data_path, (data) => {
             data.questions.map((data) => {
                 taskList.push(data);
             });
-            publicSelectRandomNum();
+            selectRandomNum();
         });
     }
 
-    function publicSelectRandomNum() {
+    function selectRandomNum() {
         if(taskList.length > 0) {
             randomNum = Math.floor(Math.random() * taskList.length);
             buildRandomTask();
@@ -38,8 +38,8 @@ let buildTask = (() => {
     }
 
     return {
-        getTaskData: publicGetTaskData,
-        selectRandomNum: publicSelectRandomNum,
+        getTaskData,
+        selectRandomNum
     }
 })();
 
