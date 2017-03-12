@@ -2,7 +2,6 @@ import { placeTask } from './placeTask';
 import { checkAnswer } from './checkAnswer';
 
 let buildTask = (() => {
-    let task;
     let taskList = [];
     let randomNum;
 
@@ -32,7 +31,7 @@ let buildTask = (() => {
     }
 
     function buildRandomTask() {
-        task = new Task(taskList[randomNum].image, taskList[randomNum].answer);
+        let task = new Task(taskList[randomNum].image, taskList[randomNum].answer);
         taskList.splice(randomNum, 1);
         placeTask(task);
         checkAnswer(task);
@@ -44,6 +43,6 @@ let buildTask = (() => {
     }
 })();
 
-buildTask.getTaskData('https://raw.githubusercontent.com/FlyingCarpets/quiz2/gh-pages/data/questions.json');
+buildTask.getTaskData('https://raw.githubusercontent.com/FlyingCarpets/quiz3/master/data/questions.json');
 
 export { buildTask };

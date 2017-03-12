@@ -7,7 +7,7 @@
     "build": "webpack --bail -p",
     "buildDev": "webpack --display-error-details",
     "watch": "webpack --watch",
-    "assets": "npm install && npm run buildDev",
+    "assets": "npm install && npm run buildDev"
   },
   "repository": {
     "type": "git",
