@@ -1,20 +1,19 @@
-import { buildTask } from './buildTask';
+import TaskBuilder from './buildTask';
 
-let checkAnswer = (task) => {
-    document.getElementById('js-quiz-form').addEventListener('submit', (e) => {
-        e.preventDefault();
-        validateTask(task);
-    });
-
-     function validateTask(task) {
-        const insertedAnswer = document.getElementById('userAnswer');
-        if(insertedAnswer.value.toLowerCase() == task.answer) {
-            alert('hoorah!');
-            buildTask.selectRandomNum();
-        } else {
-            alert('try again');
+class Validator {
+    validateTask(task) {
+        return function(e) {
+            e.preventDefault();
+            const insertedAnswer = document.getElementById('userAnswer');
+            if(insertedAnswer.value.toLowerCase() == task.answer) {
+                alert('hoorah!');
+                TaskBuilder.buildRandomTask();
+            } else {
+                alert('try again');
+            }
         }
-     }
-};
+    }
+}
 
-export { checkAnswer };
+// INIT
+export default new Validator();
