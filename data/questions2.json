@@ -1,20 +1,19 @@
-{
-  "questions": [
-    {
-      "image": "https://assetscdn.paytm.com/images/catalog/product/M/MU/MUSORIENTAL-VIOORIE119096C2DB054B/2.jpg",
-      "answer": "violin"
-    },
-    {
-      "image": "http://www.bandinstrumentsguide.com/wp-content/uploads/2015/03/Getzen-300-Series-Trumpet.jpg",
-      "answer": "trumpet"
-    },
-    {
-      "image": "http://www.wamusic.com.au/wp-content/uploads/schumann_up125.png",
-      "answer": "piano"
-    },
-    {
-      "image": "http://www.ozwinds.com.au/images/MA901.jpg",
-      "answer": "oboe"
-    }
-  ]
-}
+[
+  {
+    "image": "https://assetscdn.paytm.com/images/catalog/product/M/MU/MUSORIENTAL-VIOORIE119096C2DB054B/2.jpg",
+    "answer": "violin"
+  },
+  {
+    "image": "http://www.bandinstrumentsguide.com/wp-content/uploads/2015/03/Getzen-300-Series-Trumpet.jpg",
+    "answer": "trumpet"
+  },
+  {
+    "image": "http://www.wamusic.com.au/wp-content/uploads/schumann_up125.png",
+    "answer": "piano"
+  },
+  {
+    "image": "http://www.ozwinds.com.au/images/MA901.jpg",
+    "answer": "oboe"
+  }
+]
+
